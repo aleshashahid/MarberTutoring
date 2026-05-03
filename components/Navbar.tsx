@@ -70,15 +70,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex">
-            <Link
-              href="/contact"
-              className="bg-primary hover:bg-primary-light text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-            >
-              Get Started
-            </Link>
-          </div>
 
           {/* Mobile hamburger */}
           <button

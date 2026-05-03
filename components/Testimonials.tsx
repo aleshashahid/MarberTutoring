@@ -17,7 +17,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "I went from struggling with chemistry to acing my exams. The one-on-one attention made all the difference.",
+      "I went from struggling to acing my exams. The one-on-one attention made all the difference.",
     author: "Daniel R.",
     role: "10th Grade Student",
   },

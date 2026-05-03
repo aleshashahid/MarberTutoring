@@ -5,12 +5,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 // Editable copy
-const EYEBROW = "K-12 IN-PERSON TUTORING";
-const HEADLINE = "Where students learn, grow, and succeed.";
+const EYEBROW = "PARTNERING WITH SCHOOLS & PROGRAMS";
+const HEADLINE = "Empowering Student Success Through School Partnerships";
 const SUBHEADING =
-  "Personalized in-person tutoring that builds confidence, sharpens skills, and helps your child thrive — one lesson at a time.";
-const CTA_PRIMARY = "Get Started Today";
-const CTA_SECONDARY = "Explore Services";
+  "We collaborate with schools and after-school programs to deliver high-impact, in-person tutoring that helps students thrive. Let's work together to support your learners.";
 
 const FLOATING_SHAPES = [
   { left: "8%", top: "18%", size: 140, color: "#8B7AAB", opacity: 0.1, duration: 5, delay: 0 },
@@ -76,25 +74,14 @@ export default function Hero() {
               {SUBHEADING}
             </motion.p>
 
+            {/* No direct sign-up CTAs; focus on partnership */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col gap-4 justify-center lg:justify-start"
             >
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-light text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 shadow-md hover:shadow-lg min-h-[44px] focus:outline-none focus:ring-2 focus:ring-primary/50"
-              >
-                {CTA_PRIMARY}
-                <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-bg-soft px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 min-h-[44px] focus:outline-none focus:ring-2 focus:ring-primary/50"
-              >
-                {CTA_SECONDARY}
-              </Link>
+              <span className="text-base text-text-muted">Serving schools, districts, and after-school organizations.</span>
             </motion.div>
           </div>
 
