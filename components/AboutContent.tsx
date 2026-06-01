@@ -320,7 +320,7 @@ export default function AboutContent() {
             </p>
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm flex flex-col gap-8">
               <div className="flex items-center gap-5">
-                <div className="w-24 h-24 rounded-full border-4 border-primary/20 flex-shrink-0 overflow-hidden">
+                <div className="w-40 h-40 rounded-full border-4 border-primary/20 flex-shrink-0 overflow-hidden">
                   <img
                     src="/marlaphoto.jpeg"
                     alt="Marla Cortes, Founder & Executive Director"
