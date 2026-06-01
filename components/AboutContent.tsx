@@ -349,6 +349,60 @@ export default function AboutContent() {
         </div>
       </section>
 
+      {/* ── School Visits ── */}
+      <section id="visits" className="bg-white py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-14"
+          >
+            <p className="text-accent-mint font-semibold text-sm tracking-widest uppercase mb-3">
+              OUTREACH
+            </p>
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text-dark mb-4">
+              Schools We've Visited
+            </h2>
+            <p className="text-text-muted text-lg max-w-2xl mx-auto">
+              Building relationships with local schools is at the heart of what we do. Here's a look at some of the campuses we've had the privilege to visit.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { src: "/colony%20meadows%20elementary%20visit.jpg", label: "Colony Meadows Elementary" },
+              { src: "/commonwealth%20elementary%20hall%20visit.jpg", label: "Commonwealth Elementary" },
+              { src: "/sartartia%20middle%20school%20visit.jpg", label: "Sartartia Middle School" },
+              { src: "/first%20colony%20middle%20school%20visit.jpg", label: "First Colony Middle School" },
+              { src: "/fort%20bend%20christian%20academy%20visit.jpg", label: "Fort Bend Christian Academy" },
+              { src: "/St.%20Francis%20de%20Sales%20School%20Stocking%20the%20Fridge.JPG", label: "St. Francis de Sales — Stocking the Fridge" },
+              { src: "/St.%20Francis%20de%20Sales%20Teacher's%20Apprciation%20Week.jpeg", label: "St. Francis de Sales — Teacher Appreciation Week" },
+            ].map(({ src, label }, i) => (
+              <motion.div
+                key={label}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden group"
+              >
+                <img
+                  src={src}
+                  alt={label}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-text-dark/65 via-transparent to-transparent" />
+                <p className="absolute bottom-4 left-4 right-4 text-white font-semibold text-sm leading-tight">
+                  {label}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-primary-light to-primary">
         <div

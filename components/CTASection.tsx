@@ -5,10 +5,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 // Editable copy
-const HEADLINE = "Ready to Help Your Child Succeed?";
+const HEADLINE = "Ready to Bring Tutoring to Your School?";
 const SUBHEADING =
-  "Book a free consultation today and let's build a learning plan that works.";
-const CTA_LABEL = "Get Started Today";
+  "Reach out today and let's explore how Marber Learning can support your students through your school or program.";
+const CTA_LABEL = "Partner With Us";
 
 export default function CTASection() {
   return (

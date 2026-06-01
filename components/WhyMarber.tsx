@@ -26,7 +26,7 @@ const FEATURES = [
     icon: CalendarClock,
     title: "Flexible Scheduling",
     description:
-      "Sessions that fit around school, sports, and family life — at times that work for you.",
+      "Sessions designed to fit your school's schedule and program calendar — we work around you.",
   },
 ];
 

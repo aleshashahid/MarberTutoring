@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Editable section copy
-const SECTION_TITLE = "What Families Are Saying";
+const SECTION_TITLE = "The Impact We're Making";
 
 // Editable testimonials
 const TESTIMONIALS = [
