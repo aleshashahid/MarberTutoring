@@ -55,18 +55,15 @@ export default function Footer() {
           {/* Brand column */}
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="relative w-10 h-10 flex-shrink-0">
+              <div className="relative w-40 h-16 flex-shrink-0">
                 <Image
-                  src="/logo.png"
+                  src="/marber%20logo%202.png"
                   alt="Marber Learning logo"
                   fill
-                  sizes="40px"
-                  className="object-contain brightness-0 invert"
+                  sizes="144px"
+                  className="object-contain object-left"
                 />
               </div>
-              <span className="font-heading font-bold text-lg text-bg-cream">
-                Marber Learning
-              </span>
             </Link>
             <p className="text-text-muted text-sm leading-relaxed max-w-xs">{TAGLINE}</p>
             <div className="flex gap-4 mt-1">
