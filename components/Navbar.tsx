@@ -29,13 +29,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28 md:h-32">
-          <Link href="/" className="relative w-44 h-16 md:w-55 md:h-25 flex-shrink-0">
+        <div className="flex items-center justify-between h-28 md:h-36">
+          <Link href="/" className="relative w-52 h-20 md:w-66 md:h-30 flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Marber Learning logo"
               fill
-              sizes="(max-width: 768px) 176px, 208px"
+              sizes="(max-width: 768px) 211px, 264px"
               className="object-contain object-left"
               priority
             />
